@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class AssemblyOfComputerParts : MonoBehaviour
+public class AssemblyOfComputer : MonoBehaviour
 {
     [SerializeField] private ComputerPart[] _computerParts;
     [SerializeField] private ComputerShadowPart[] _computerShadowParts;
