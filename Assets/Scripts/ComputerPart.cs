@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class ComputerPart : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class ComputerPart : MonoBehaviour
     private Vector2 _dragOffset;
     private Vector2 _startPos;
     private bool _isConnect;
+
+    public bool IsConnect => _isConnect;
+
+    public event Action Connected;
     
     public void Initialize(Camera camera, ComputerShadowPart computerShadowPart)
     {
@@ -42,6 +47,7 @@ public class ComputerPart : MonoBehaviour
         {
             transform.position = _computerShadowPart.transform.position;
             _isConnect = true;
+            Connected?.Invoke();
         }
         else
         {

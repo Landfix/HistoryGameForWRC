@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AssemblyOfComputer : MonoBehaviour
 {
@@ -13,6 +16,21 @@ public class AssemblyOfComputer : MonoBehaviour
         for (int i = 0; i < _computerParts.Length; i++)
         {
             _computerParts[i].Initialize(_camera,_computerShadowParts[i]);
+            _computerParts[i].Connected += CheckAllConnects;
         }
+    }
+
+    private void CheckAllConnects()
+    {
+        if (_computerParts.All(x => x.IsConnect))
+        {
+            StartCoroutine(ActivateNewLevelCoroutine());
+        }
+    }
+
+    private IEnumerator ActivateNewLevelCoroutine()
+    {
+        yield return new WaitForSeconds(0.4f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
