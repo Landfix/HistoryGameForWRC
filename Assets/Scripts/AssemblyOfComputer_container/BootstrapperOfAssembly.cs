@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bootstrapper : MonoBehaviour
+public class BootstrapperOfAssembly : MonoBehaviour
 {
     [SerializeField] private GameUi _gameUi;
     [SerializeField] AssemblyOfComputer _assemblyOfComputer;
