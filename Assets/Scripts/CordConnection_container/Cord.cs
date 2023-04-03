@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace WireConnection_container
@@ -7,62 +6,79 @@ namespace WireConnection_container
     [RequireComponent(typeof(LineRenderer))]
     public class Cord : MonoBehaviour
     {
+        [SerializeField] private Color _color;
         [SerializeField] private LineRenderer _lineRenderer;
         [SerializeField] private Collider2D _collider2D;
 
         private Camera _camera;
+        private CordTextBlock _cordTextBlock;
         private float _resolution = 0.17f;
         private Vector2 _startPos;
 
-        private bool _isUp;
+        private bool _isUp = true;
 
-        public void Initialize(Camera camera)
+        public bool IsConnect { get; private set; }
+
+        public event Action Connected;
+
+        public void Initialize(CordTextBlock cordTextBlock, Camera camera)
         {
             _camera = camera;
-            _startPos = _lineRenderer.GetPosition(_lineRenderer.positionCount - 1);
+            _cordTextBlock = cordTextBlock;
+            _lineRenderer.material.color = _color;
+            
+            var position = transform.position;
+            _lineRenderer.SetPosition(0,position);
+            _lineRenderer.SetPosition(1,position);
+            _startPos = position;
         }
 
-        // private void OnMouseDown()
-        // {
-        //     _dragOffset = (Vector2)transform.position - GetMousePosition();
-        // }
-
-        private void Update()
+        private void OnMouseDown()
         {
-            Vector2 mousePos = GetMousePosition();
-            if (Input.GetMouseButtonDown(0))
-            {
-                
-            }
+            if(IsConnect)
+                return;
             
-            if (Input.GetMouseButtonDown(0))
+            if (_collider2D.OverlapPoint(GetMousePosition()))
             {
-                if(_isUp)
-                    return;
-            }
-
-            if (Input.GetMouseButtonUp(0))
-            {
-                _isUp = true;
+                _isUp = false;
             }
         }
 
         private void OnMouseDrag()
         {
-            _collider2D.offset = GetLastPosition();
-            if (_collider2D.OverlapPoint(GetMousePosition()))
+            if(_isUp || IsConnect)
+                return;
+                
+            SetPosition(GetMousePosition());
+        }
+
+        private void OnMouseUp()
+        {
+            if(IsConnect)
+                return;
+            
+            _isUp = true;
+            
+            if (_cordTextBlock.CheckConnect(GetMousePosition()))
             {
-                SetPosition(GetMousePosition());
+                _collider2D.enabled = false;
+                IsConnect = true;
+                Connected?.Invoke();
+                _collider2D.offset = GetMousePosition();
+            }
+            else
+            {
+                SetPosition(_startPos);
             }
         }
-        
+
         private void SetPosition(Vector2 pos)
         {
             if (!CanAppend(pos))
                 return;
             
             _lineRenderer.SetPosition(_lineRenderer.positionCount - 1, pos);
-            _collider2D.offset = pos;
+            _collider2D.offset = pos - _startPos;
         }
         
         private bool CanAppend(Vector2 pos)
@@ -70,11 +86,6 @@ namespace WireConnection_container
             if (_lineRenderer.positionCount == 0) return true;
 
             return Vector2.Distance(_lineRenderer.GetPosition(_lineRenderer.positionCount - 1), pos) > _resolution;
-        }
-
-        private Vector2 GetLastPosition()
-        {
-            return _lineRenderer.GetPosition(_lineRenderer.positionCount - 1);
         }
 
         private Vector3 GetMousePosition()

@@ -30,7 +30,7 @@ public class AssemblyOfComputer : MonoBehaviour
 
     private IEnumerator ActivateNewLevelCoroutine()
     {
-        yield return new WaitForSeconds(0.4f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        yield return new WaitForSeconds(0.7f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
