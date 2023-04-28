@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,6 +71,54 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -78,7 +126,364 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ComputerBlock
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 529
+        width: 179
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a6d7bb0977d6548b58221bbe1ff218
+      internalID: -1085867311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monitor
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 551
+        width: 312
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c7f66148bc76a4fb3af7692002f8d6
+      internalID: 1661863871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowMonitor
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 551
+        width: 312
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca5c889b1a655140bc9b6afcada6573
+      internalID: 613424091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 387
+        width: 396
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebb58fcc9bd6a048baea61c580357ce
+      internalID: -1447759031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 415
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63faeb9dd53aa144bbafe2bb790457ee
+      internalID: 1841394203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowComputerBlock
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 179
+        width: 179
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdac1c5b0f5e39438edd8ead5061c24
+      internalID: -545655721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowMouse
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 415
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40905ef6e1d0ccd4595bfbb67dd922f8
+      internalID: -6684644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monitor_Dust
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 166
+        width: 282
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ad965aff222dc43a3d8e622bba4e9d
+      internalID: 1713026397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rubber
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 204
+        width: 94
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbccea5ee71d654ca534114b9c69ba3
+      internalID: -260799476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LineOfMouse
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 247
+        width: 86
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71830d118e6de38479f87af4bddb1cba
+      internalID: 1957453163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowLineOfMouse
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 247
+        width: 85
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d849435ac2b8449b89e6f3d6d3cdac
+      internalID: 1416863100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShadowKeyboard
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 27
+        width: 396
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a707520326cc04fb65e798d20409e3
+      internalID: -1996868307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerBlock_Dust
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 7
+        width: 118
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260a9c7c225297c4f837d29637eb5648
+      internalID: 207108600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerBlock_Dust_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 23
+        width: 112
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d357a03cbb81c4a85ec1968e79e309
+      internalID: 1943003711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dust
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 35
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9d21a53fa1dd9469c1e0e49271b481
+      internalID: 978514049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dust_2
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 34
+        width: 86
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f98bf04e4088d478e84658be44ca73
+      internalID: 379081710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dust_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 26
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27765f165f07774c9098bf00ac453d3
+      internalID: -915693242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +494,82 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ComputerElements_Atlas_56: -1367868089
+      ComputerElements_Atlas_13: -773642346
+      ComputerElements_Atlas_64: 585185087
+      ComputerElements_Atlas_72: 1101254551
+      ComputerElements_Atlas_61: 1237374145
+      ComputerElements_Atlas_31: 33373440
+      ComputerElements_Atlas_67: -1410401153
+      ComputerElements_Atlas_40: -6186420
+      ComputerElements_Atlas_60: -751298195
+      ComputerElements_Atlas_43: -2032179255
+      ComputerElements_Atlas_18: -1686722608
+      ComputerElements_Atlas_39: -1037004332
+      ComputerElements_Atlas_69: 1798108129
+      ComputerElements_Atlas_20: 1153733196
+      ComputerElements_Atlas_73: -1657427847
+      ComputerElements_Atlas_36: -47838336
+      ComputerElements_Atlas_62: 783879475
+      ComputerElements_Atlas_19: 1877586271
+      Monitor_Dust: 1713026397
+      ComputerElements_Atlas_41: 508278055
+      ComputerElements_Atlas_74: -1193337871
+      ComputerElements_Atlas_57: 571455396
+      ComputerBlock_Dust: 207108600
+      ShadowLineOfMouse: 1416863100
+      ComputerElements_Atlas_35: 1426919580
+      ComputerElements_Atlas_55: -1401051919
+      ComputerElements_Atlas_59: -938662773
+      ComputerElements_Atlas_38: -1597696938
+      ComputerElements_Atlas_21: 1004254079
+      ComputerElements_Atlas_47: -1442123236
+      ComputerElements_Atlas_70: -1741918324
+      ComputerElements_Atlas_50: 414808040
+      ShadowMonitor: 613424091
+      ComputerElements_Atlas_65: -1146222806
+      ShadowKeyboard: -1996868307
+      ComputerElements_Atlas_28: 1266404341
+      Monitor: 1661863871
+      ComputerElements_Atlas_58: 375340082
+      Keyboard: -1447759031
+      LineOfMouse: 1957453163
+      ComputerElements_Atlas_54: 533687782
+      ComputerElements_Atlas_34: 1610232511
+      Mouse: 1841394203
+      ComputerElements_Atlas_45: 520407093
+      Keyboard_Dust_3: -915693242
+      ComputerElements_Atlas_49: 150459763
+      ComputerElements_Atlas_68: 1041962992
+      ComputerElements_Atlas_66: 1331151260
+      ComputerElements_Atlas_44: 176561547
+      ComputerElements_Atlas_48: 1999483112
+      ComputerElements_Atlas_71: 1569987887
+      ComputerElements_Atlas_52: 1262782640
+      ComputerElements_Atlas_25: 921924762
+      ComputerElements_Atlas_30: 1572665353
+      ComputerElements_Atlas_24: -269416430
+      ComputerElements_Atlas_22: -703241197
+      ComputerElements_Atlas_26: 1633078476
+      ComputerElements_Atlas_63: 1998403844
+      ComputerElements_Atlas_53: -156799103
+      ComputerBlock_Dust_2: 1943003711
+      ComputerElements_Atlas_42: -443302875
+      ComputerElements_Atlas_33: -1977046742
+      ComputerElements_Atlas_23: -1745638698
+      ShadowMouse: -6684644
+      Keyboard_Dust: 978514049
+      Keyboard_Dust_2: 379081710
+      ComputerElements_Atlas_29: 1328569931
+      Rubber: -260799476
+      ComputerElements_Atlas_16: 900463219
+      ComputerElements_Atlas_51: -1841786698
+      ComputerBlock: -1085867311
+      ShadowComputerBlock: -545655721
+      ComputerElements_Atlas_46: 2112751440
+      ComputerElements_Atlas_32: 921288996
+      ComputerElements_Atlas_27: -1289343947
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34dfce225453fa840a2d62d0906bc20d
+guid: e6882630da71399468ed3dd6433ce78c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,7 +71,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -128,211 +128,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WhiteOrange_cable
+      name: SoundSpeaker
       rect:
         serializedVersion: 2
-        x: 36
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddf74f32989f23e478611717d4a2c44c
-      internalID: -1437494970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orange_cable
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0dba26c247dbbc4da7e1df5282f7a67
-      internalID: -1900436264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteGreen_cable
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dcc940638830284d80ddea7ce6b52c6
-      internalID: -1426313833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueOrange_cable
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8dc4495bf2f85348ac5f42d7b2847e6
-      internalID: 1571789063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteBlue_cable
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eac827cf3192aa549ae57bf24e3ccd16
-      internalID: -1150246164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green_cable
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e703a8ef14722c4f82bac2f629c9061
-      internalID: 736716652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WhiteBrown_cable
-      rect:
-        serializedVersion: 2
-        x: 389
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f881a6370e0f5d4a85aba6f504309d2
-      internalID: -1300090836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Brown_cable
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 273
-        width: 31
-        height: 386
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ba2685474037aa42954c1fb84093832
-      internalID: -1791012940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CableBlock
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 285
-        width: 68
-        height: 62
+        x: 9
+        y: 520
+        width: 197
+        height: 292
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 13, y: 13, z: 13, w: 13}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65c6504cff1a8a140bc3278ccf2e501c
-      internalID: 953708293
+      spriteID: 46b92e51c434513458216803dc1b0a16
+      internalID: -1897215340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel
+      name: Earphones
       rect:
         serializedVersion: 2
-        x: 6
-        y: 8
-        width: 589
-        height: 261
+        x: 253
+        y: 549
+        width: 175
+        height: 171
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 35, y: 35, z: 35, w: 35}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07a06e13c15fd3e4087037482ee32dd2
-      internalID: -1865612562
+      spriteID: 35f732125d8e40341be2629e51085d50
+      internalID: 878767194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Microphone
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 521
+        width: 135
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb75ddcbd2704d04eb367fdb21515344
+      internalID: -471204625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joystick
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 291
+        width: 241
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6d2fd5d2b4f9d42ae250085b67197d
+      internalID: 782321801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camera
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 288
+        width: 163
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2f2d970895ea84baa05756c011c11d
+      internalID: 862955234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 18
+        width: 233
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 27, y: 27, z: 27, w: 27}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5bf71234c031d45951b4d81e7cb863
+      internalID: 1927263053
       vertices: []
       indices: 
       edges: []
@@ -348,24 +264,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WhiteBlue_cable: -1150246164
-      CableSequence_Atlas_11: 1046788594
-      BlueOrange_cable: 1571789063
-      CableSequence_Atlas_0: -1755753645
-      WhiteBrown_cable: -1300090836
-      CableSequence_Atlas_2: 197652716
-      Orange_cable: -1900436264
-      WhiteGreen_cable: -1426313833
-      CableSequence_Atlas_14: -1237879063
-      WhiteOrange_cable: -1437494970
-      Green_cable: 736716652
-      Panel: -1865612562
-      CableSequence_Atlas_1: 2111635718
-      CableSequence_Atlas_17: -1957191896
-      Brown_cable: -1791012940
-      CableSequence_Atlas_12: 555274389
-      CableSequence_Atlas_16: -1797954384
-      CableBlock: 953708293
+      Joystick: 782321801
+      Microphone: -471204625
+      Frame: 1927263053
+      Earphones: 878767194
+      SoundSpeaker: -1897215340
+      Camera: 862955234
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
