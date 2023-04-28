@@ -40,7 +40,7 @@ namespace WireConnection_container
             for (int i = 0; i < _cords.Length; i++) 
                 _cords[i].Connected -= Connected;
             
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
