@@ -17,11 +17,7 @@ namespace UI
         private void OnClickNextScene()
         {
             _btn.onClick.RemoveListener(OnClickNextScene);
-            
-            if (SceneManager.sceneCountInBuildSettings > SceneManager.GetActiveScene().buildIndex)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            else
-                SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

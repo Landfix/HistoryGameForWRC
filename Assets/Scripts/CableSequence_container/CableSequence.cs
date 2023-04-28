@@ -41,6 +41,7 @@ namespace LineSequence_container
             {
                 CableConfig cableConfig = _cableConfigs.Cables.FirstOrDefault(x => x.CableType == _cableTypes[i]);
                 Cable cable = Instantiate(_cablePrefab,_cableContainer);
+                _cableBlocks[i].Initialize(i+1);
                 cable.Initialize(_camera,_cableBlocks[i],cableConfig);
                 _cables.Add(cable);
             }

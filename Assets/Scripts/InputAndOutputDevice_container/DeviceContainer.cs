@@ -58,7 +58,7 @@ namespace InputAndOutputDevice_container
 
         private static void StartNewScene()
         {
-            if (SceneManager.sceneCount - 1 > SceneManager.GetActiveScene().buildIndex)
+            if (SceneManager.sceneCountInBuildSettings -1 > SceneManager.GetActiveScene().buildIndex)
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             else
                 SceneManager.LoadScene(0);
