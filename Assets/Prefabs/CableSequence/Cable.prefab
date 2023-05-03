@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _model: {fileID: 1771796879431962104}
+  _collider2D: {fileID: 4890276925397177262}
 --- !u!212 &1771796879431962104
 SpriteRenderer:
   m_ObjectHideFlags: 0
