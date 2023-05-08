@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using UI;
+using UnityEngine;
 
-namespace WireConnection_container
+namespace CordConnection_container
 {
     public class BootstrapperOfConnection : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace LineSequence_container.Configs
+namespace CableSequence_container.Configs
 {
     [CreateAssetMenu(fileName = "CableConfigs",menuName = "Configs/CableConfigs")]
     public class CableConfigs : ScriptableObject

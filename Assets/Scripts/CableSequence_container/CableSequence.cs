@@ -2,13 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using LineSequence_container.Configs;
-using Unity.VisualScripting;
+using CableSequence_container.Configs;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = System.Random;
 
-namespace LineSequence_container
+namespace CableSequence_container
 {
     public enum CableType
     {

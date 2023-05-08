@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
+using CableSequence_container.Configs;
 using DG.Tweening;
-using LineSequence_container.Configs;
 using UnityEngine;
 
-namespace LineSequence_container
+namespace CableSequence_container
 {
     public class Cable : MonoBehaviour
     {

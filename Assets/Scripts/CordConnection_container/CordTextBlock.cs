@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace WireConnection_container
+namespace CordConnection_container
 {
     public class CordTextBlock : MonoBehaviour
     {

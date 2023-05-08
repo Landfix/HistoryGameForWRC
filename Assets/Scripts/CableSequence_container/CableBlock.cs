@@ -1,8 +1,7 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
-namespace LineSequence_container
+namespace CableSequence_container
 {
     public class CableBlock : MonoBehaviour
     {

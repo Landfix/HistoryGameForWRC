@@ -3,34 +3,37 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AssemblyOfComputer : MonoBehaviour
+namespace AssemblyOfComputer_container
 {
-    [SerializeField] private ComputerPart[] _computerParts;
-    [SerializeField] private ComputerShadowPart[] _computerShadowParts;
-
-    private Camera _camera;
-    public void Initialize()
+    public class AssemblyOfComputer : MonoBehaviour
     {
-        _camera = Camera.main;
+        [SerializeField] private ComputerPart[] _computerParts;
+        [SerializeField] private ComputerShadowPart[] _computerShadowParts;
 
-        for (int i = 0; i < _computerParts.Length; i++)
+        private Camera _camera;
+        public void Initialize()
         {
-            _computerParts[i].Initialize(_camera,_computerShadowParts[i]);
-            _computerParts[i].Connected += CheckAllConnects;
-        }
-    }
+            _camera = Camera.main;
 
-    private void CheckAllConnects()
-    {
-        if (_computerParts.All(x => x.IsConnect))
+            for (int i = 0; i < _computerParts.Length; i++)
+            {
+                _computerParts[i].Initialize(_camera,_computerShadowParts[i]);
+                _computerParts[i].Connected += CheckAllConnects;
+            }
+        }
+
+        private void CheckAllConnects()
         {
-            StartCoroutine(ActivateNewLevelCoroutine());
+            if (_computerParts.All(x => x.IsConnect))
+            {
+                StartCoroutine(ActivateNewLevelCoroutine());
+            }
         }
-    }
 
-    private IEnumerator ActivateNewLevelCoroutine()
-    {
-        yield return new WaitForSeconds(0.7f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        private IEnumerator ActivateNewLevelCoroutine()
+        {
+            yield return new WaitForSeconds(0.7f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

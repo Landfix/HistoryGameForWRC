@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace WireConnection_container
+namespace CordConnection_container
 {
     public class CordConnection : MonoBehaviour
     {

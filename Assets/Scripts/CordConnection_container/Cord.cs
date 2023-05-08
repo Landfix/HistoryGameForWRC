@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace WireConnection_container
+namespace CordConnection_container
 {
     [RequireComponent(typeof(LineRenderer))]
     public class Cord : MonoBehaviour

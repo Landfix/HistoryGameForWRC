@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace LineSequence_container.Configs
+namespace CableSequence_container.Configs
 {
     [CreateAssetMenu(fileName = "CableConfig",menuName = "Configs/CableConfig")]
     public class CableConfig : ScriptableObject
