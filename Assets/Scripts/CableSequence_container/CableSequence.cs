@@ -35,7 +35,7 @@ namespace CableSequence_container
         private List<Cable> _cables;
         private Camera _camera;
 
-        public void Start()
+        public void Initialize()
         {
             _camera = Camera.main;
             _cables = new List<Cable>();

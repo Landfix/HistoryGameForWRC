@@ -16,6 +16,7 @@ namespace AssemblyOfComputer_container
         public bool IsConnect => _isConnect;
 
         public event Action Connected;
+        public event Action Inconnected;
     
         public void Initialize(Camera camera, ComputerShadowPart computerShadowPart)
         {
@@ -54,6 +55,7 @@ namespace AssemblyOfComputer_container
             else
             {
                 transform.position = _startPos;
+                Inconnected?.Invoke();
             }
         }
 

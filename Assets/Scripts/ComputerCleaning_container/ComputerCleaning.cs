@@ -14,7 +14,7 @@ namespace ComputerCleaning_container
         private IPool<CleansingMask> _cleansingMaskPool;
         private Camera _camera;
 
-        private void Start()
+        public void Initialize()
         {
             _camera = Camera.main;
             _cleansingMaskPool = new Pool<CleansingMask>(_cleansingMaskPrefab, _cleansingContainer, 5, 7, true);

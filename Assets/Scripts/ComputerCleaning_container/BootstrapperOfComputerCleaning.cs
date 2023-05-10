@@ -2,26 +2,25 @@
 using UI;
 using UnityEngine;
 
-namespace CordConnection_container
+namespace ComputerCleaning_container
 {
-    public class BootstrapperOfConnection : BaseBootstrapper
+    public class BootstrapperOfComputerCleaning : BaseBootstrapper
     {
         [SerializeField] private GameUi _gameUi;
-        [SerializeField] private CordConnection _cordConnection;
+        [SerializeField] private ComputerCleaning _computerCleaning;
 
         public override event Action Won;
         public override event Action Incorrected;
-
+        
         private void Start()
         {
             _gameUi.Initialize(this);
-            _cordConnection.Initialize();
-            _cordConnection.AllConnected += Won;
+            _computerCleaning.Initialize();
         }
 
         public override void ShowHint()
         {
-            
+            throw new System.NotImplementedException();
         }
     }
 }

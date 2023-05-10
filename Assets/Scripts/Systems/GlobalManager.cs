@@ -10,11 +10,10 @@ namespace Systems
     public class GlobalManager : SingletonMono<GlobalManager>
     {
         private const string LevelScene = "Level {0}";
-        private const string BonusLevelScene = "BonusLevel {0}";
         
         [SerializeField] private MusicEffect _musicEffect;
-        [SerializeField] private LanguageManager _languageManager;
-
+        
+        private LanguageManager _languageManager;
         private readonly Preferences _preferences = new Preferences();
         
         public Preferences Preferences => _preferences;
@@ -45,8 +44,8 @@ namespace Systems
         private void OnPause() => 
             _preferences.SetSoundPlayback(-1, true);
 
-        private void OnReady() => 
-            _languageManager.Init();
+        private void OnReady() =>
+            _languageManager = new LanguageManager();
 
         public void LevelSkip()
         {

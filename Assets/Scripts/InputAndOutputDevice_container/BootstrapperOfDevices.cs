@@ -2,26 +2,25 @@
 using UI;
 using UnityEngine;
 
-namespace CordConnection_container
+namespace InputAndOutputDevice_container
 {
-    public class BootstrapperOfConnection : BaseBootstrapper
+    public class BootstrapperOfDevices : BaseBootstrapper
     {
         [SerializeField] private GameUi _gameUi;
-        [SerializeField] private CordConnection _cordConnection;
-
+        [SerializeField] private DeviceContainer _deviceContainer;
+        
         public override event Action Won;
         public override event Action Incorrected;
 
         private void Start()
         {
             _gameUi.Initialize(this);
-            _cordConnection.Initialize();
-            _cordConnection.AllConnected += Won;
+            _deviceContainer.Initialize();
         }
 
         public override void ShowHint()
         {
-            
+            throw new System.NotImplementedException();
         }
     }
 }

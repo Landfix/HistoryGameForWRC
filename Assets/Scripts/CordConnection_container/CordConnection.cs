@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,8 @@ namespace CordConnection_container
         [SerializeField] private CordTextBlock[] _cordTextBlocks;
 
         private Camera _camera;
+
+        public event Action AllConnected;
 
         public void Initialize()
         {
@@ -28,6 +31,7 @@ namespace CordConnection_container
         {
             if (_cords.All(x => x.IsConnect))
             {
+                AllConnected?.Invoke();
                 StartCoroutine(AllConnectedCoroutine());
             }
         }

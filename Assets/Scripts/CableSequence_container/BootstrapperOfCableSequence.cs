@@ -2,26 +2,24 @@
 using UI;
 using UnityEngine;
 
-namespace CordConnection_container
+namespace CableSequence_container
 {
-    public class BootstrapperOfConnection : BaseBootstrapper
+    public class BootstrapperOfCableSequence : BaseBootstrapper
     {
         [SerializeField] private GameUi _gameUi;
-        [SerializeField] private CordConnection _cordConnection;
+        [SerializeField] private CableSequence _cableSequence;
 
         public override event Action Won;
         public override event Action Incorrected;
-
+        
         private void Start()
         {
             _gameUi.Initialize(this);
-            _cordConnection.Initialize();
-            _cordConnection.AllConnected += Won;
+            _cableSequence.Initialize();
         }
 
         public override void ShowHint()
         {
-            
         }
     }
 }

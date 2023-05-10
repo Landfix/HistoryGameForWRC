@@ -79,7 +79,7 @@ namespace Systems
         public void SetLevel(int value)
         {
             level += value;
-
+            Debug.Log($"Level: {level}");
             if (level > MaxNumberOfLevels)
                 level = MaxNumberOfLevels;
 

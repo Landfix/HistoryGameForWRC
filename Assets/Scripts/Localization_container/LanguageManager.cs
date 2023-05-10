@@ -12,17 +12,13 @@ namespace Localization_container
         Unknown
     }
 
-    public class LanguageManager : SingletonMono<LanguageManager>
+    public class LanguageManager
     {
-        private static LanguageManager _instance;
-    
-        public static LanguageManager I => _instance;
-    
-    
-        public void Init()
+
+        public LanguageManager()
         {
             // Localization.Instance.SetLanguage((LanguageType) Enum.Parse(typeof(LanguageType),
-            //     GameScore.GS_Language.Current()));
+            //     GameScore.GS_Language.Current()));   
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,10 @@ namespace AssemblyOfComputer_container
         [SerializeField] private ComputerShadowPart[] _computerShadowParts;
 
         private Camera _camera;
+
+        public event Action AllConnected;
+        public event Action Inconnected;
+        
         public void Initialize()
         {
             _camera = Camera.main;
@@ -19,6 +24,7 @@ namespace AssemblyOfComputer_container
             {
                 _computerParts[i].Initialize(_camera,_computerShadowParts[i]);
                 _computerParts[i].Connected += CheckAllConnects;
+                _computerParts[i].Inconnected += Inconnected;
             }
         }
 
@@ -26,7 +32,8 @@ namespace AssemblyOfComputer_container
         {
             if (_computerParts.All(x => x.IsConnect))
             {
-                StartCoroutine(ActivateNewLevelCoroutine());
+                //StartCoroutine(ActivateNewLevelCoroutine());
+                AllConnected?.Invoke();
             }
         }
 

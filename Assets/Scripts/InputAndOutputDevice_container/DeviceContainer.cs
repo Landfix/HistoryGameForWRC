@@ -13,7 +13,7 @@ namespace InputAndOutputDevice_container
         [SerializeField] private List<FakeDevice> _fakeDevices;
 
 
-        private void Start()
+        public void Initialize()
         {
             foreach (Device device in _devices)
             {
