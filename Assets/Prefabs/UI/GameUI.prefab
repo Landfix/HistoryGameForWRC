@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1514042823386504341}
   - component: {fileID: 1514042823386504340}
   - component: {fileID: 1514042823386504344}
+  - component: {fileID: 8193038330763439083}
   m_Layer: 5
   m_Name: GameUI
   m_TagString: Untagged
@@ -119,6 +120,14 @@ MonoBehaviour:
   _gameContainer: {fileID: 853197731516766146}
   _winCurtain: {fileID: 1514042824812554469}
   _incorrectCurtain: {fileID: 7046324867240229709}
+--- !u!222 &8193038330763439083
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514042823386504343}
+  m_CullTransparentMesh: 1
 --- !u!1001 &142596303738551762
 PrefabInstance:
   m_ObjectHideFlags: 0

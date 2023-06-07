@@ -32,7 +32,7 @@ namespace AssemblyOfComputer_container
         {
             if (_computerParts.All(x => x.IsConnect))
             {
-                //StartCoroutine(ActivateNewLevelCoroutine());
+                StartCoroutine(ActivateNewLevelCoroutine());
                 AllConnected?.Invoke();
             }
         }

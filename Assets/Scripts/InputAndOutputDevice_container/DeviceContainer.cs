@@ -12,6 +12,8 @@ namespace InputAndOutputDevice_container
         [SerializeField] private List<Device> _devices;
         [SerializeField] private List<FakeDevice> _fakeDevices;
 
+        public event Action AllSelected;
+
 
         public void Initialize()
         {
@@ -33,6 +35,7 @@ namespace InputAndOutputDevice_container
             if (_devices.All(x => x.IsSelected) 
                 && _fakeDevices.All(x => !x.IsSelected))
             {
+                AllSelected?.Invoke();
                 StartCoroutine(AllSelectedDevicesCoroutine());
             }
         }
@@ -42,13 +45,13 @@ namespace InputAndOutputDevice_container
             if (_devices.All(x => x.IsSelected) 
                 && _fakeDevices.All(x => !x.IsSelected))
             {
+                AllSelected?.Invoke();
                 StartCoroutine(AllSelectedDevicesCoroutine());
             }
         }
         
         private IEnumerator AllSelectedDevicesCoroutine()
         {
-            // todo recast
             yield return new WaitForSeconds(0.7f);
             for (int i = 0; i < _devices.Count; i++) 
                 _devices[i].Selected -= DeviceSelected;

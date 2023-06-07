@@ -1,6 +1,5 @@
 ﻿using System;
 using Similarity_container.Configs;
-using UnityEditorInternal;
 using UnityEngine;
 
 namespace Similarity_container
@@ -28,9 +27,10 @@ namespace Similarity_container
 
         public SimilarityType SimilarityType => _similarityType;
         public Collider2D Collider2D => _collider2D;
+        public bool IsConnect { get; private set; }
 
         public event Action<SimilarityElement,Vector2> Up;
-        
+
         public void Initialize(Camera camera, SimilarityElementConfig similarityElementConfig)
         {
             _camera = camera;
@@ -67,7 +67,6 @@ namespace Similarity_container
             if (_isMouseDrag)
             {
                 Up?.Invoke(this,GetMousePosition());
-                //_collider2D.offset = GetMousePosition();
                 _isMouseDrag = false;
             }
             else
@@ -82,7 +81,6 @@ namespace Similarity_container
                 return;
             
             _lineRenderer.SetPosition(_lineRenderer.positionCount - 1, pos);
-            //_collider2D.offset = pos - _startPos;
         }
         
         private bool CanAppend(Vector2 pos)
@@ -99,7 +97,6 @@ namespace Similarity_container
 
         public void ResetPosition()
         {
-            //incorrected
             SetPosition(_startPos);
         }
 
@@ -107,6 +104,7 @@ namespace Similarity_container
         {
             SwitchSelectableArea(true);
             _collider2D.enabled = false;
+            IsConnect = true;
         }
 
         private void SwitchSelectableArea(bool isActivate) => 

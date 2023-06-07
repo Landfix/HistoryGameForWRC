@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aab530f7b0a44bd99bc9147aee5da971, type: 3}
-  m_Name: SimilarityConfigs
+  m_Name: SimilarityConfigs_1
   m_EditorClassIdentifier: 
   _similarityElementsFromConfig:
-  - {fileID: 11400000, guid: b17411fbbb722f8488cbc68d5556dc62, type: 2}
-  - {fileID: 11400000, guid: 47543e29a57c14a4a97bdb3e13a9845b, type: 2}
-  - {fileID: 11400000, guid: 488f453f733ddfe48a95df438531394f, type: 2}
   - {fileID: 11400000, guid: ba1fdbaaf15a4864280167b905b96aeb, type: 2}
-  - {fileID: 11400000, guid: e79be50425ce00349ab874865c167c8f, type: 2}
-  - {fileID: 11400000, guid: 82dde833ad8cb1e4395379f0d4d053db, type: 2}
-  - {fileID: 11400000, guid: 58d35d254a827524090463fcac7b66d2, type: 2}
   - {fileID: 11400000, guid: 00b1c1f5fdd04c447b8c359f31c0ab77, type: 2}
+  - {fileID: 11400000, guid: 58d35d254a827524090463fcac7b66d2, type: 2}
+  - {fileID: 11400000, guid: 82dde833ad8cb1e4395379f0d4d053db, type: 2}
+  - {fileID: 11400000, guid: 488f453f733ddfe48a95df438531394f, type: 2}
+  - {fileID: 11400000, guid: b17411fbbb722f8488cbc68d5556dc62, type: 2}

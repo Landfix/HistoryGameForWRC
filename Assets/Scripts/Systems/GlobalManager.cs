@@ -49,9 +49,9 @@ namespace Systems
 
         public void LevelSkip()
         {
-            _preferences.SetLevel(1);
-            Resources.UnloadUnusedAssets();
-            SceneManager.LoadScene(string.Format(LevelScene,_preferences.level));
+            // _preferences.SetLevel(1);
+            // Resources.UnloadUnusedAssets();
+            // SceneManager.LoadScene(string.Format(LevelScene,_preferences.level));
         }
 
         public void GetNewCompleteCharacter(int skinType, int numberOfAdViews)

@@ -43,7 +43,7 @@ namespace UI
 
         private void OnDestroy()
         {
-            _baseBootstrapper.Incorrected -= ShowCurtain;
+//            _baseBootstrapper.Incorrected -= ShowCurtain;
         }
     }
 }

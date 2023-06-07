@@ -23,7 +23,7 @@ namespace UI
         private void OnClickPlay()
         {
             _playBtn.onClick.RemoveListener(OnClickPlay);
-            SceneManager.LoadScene(string.Format(SceneName,_cachedPreferences.level));
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
     }
 }

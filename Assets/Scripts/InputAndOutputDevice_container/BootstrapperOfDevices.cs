@@ -16,11 +16,11 @@ namespace InputAndOutputDevice_container
         {
             _gameUi.Initialize(this);
             _deviceContainer.Initialize();
+            _deviceContainer.AllSelected += Won;
         }
 
         public override void ShowHint()
         {
-            throw new System.NotImplementedException();
         }
     }
 }

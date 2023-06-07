@@ -16,6 +16,8 @@ namespace Similarity_container
         {
             _gameUi.Initialize(this);
             _similarity.Initialize();
+            _similarity.Inconnected += Incorrected;
+            _similarity.AllConnected += Won;
         }
 
         public override void ShowHint()

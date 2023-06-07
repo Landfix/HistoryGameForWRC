@@ -23,8 +23,7 @@ namespace UI
         {
             _baseBootstrapper.Won -= Won;
             ShowCurtain();
-            _correctIconTransform.DOScale(Vector2.one * 3, 0.4f).SetEase(Ease.Flash)
-                .OnComplete(GlobalManager.I.LevelSkip);
+            _correctIconTransform.DOScale(Vector2.one * 3, 0.4f).SetEase(Ease.Flash);
         }
 
         private void ShowCurtain()

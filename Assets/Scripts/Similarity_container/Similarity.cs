@@ -1,7 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using Similarity_container.Configs;
+using UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Similarity_container
 {
@@ -16,6 +20,9 @@ namespace Similarity_container
 
         private SimilarityElementConfig[] _similarityElementsFromConfig;
         private Camera _camera;
+
+        public event Action AllConnected;
+        public event Action Inconnected;
         
         public void Initialize()
         {
@@ -59,6 +66,7 @@ namespace Similarity_container
             if (selectedSimilarityElement == null)
             {
                 similarityElement.ResetPosition();
+                Inconnected?.Invoke();
                 return;
             }
 
@@ -66,6 +74,12 @@ namespace Similarity_container
             selectedSimilarityElement.SelectCorrectArea();
             similarityElement.Up -= Up;
             selectedSimilarityElement.Up -= Up;
+
+            if (CheckWin())
+            {
+                StartCoroutine(ActivateNewLevelCoroutine());
+                AllConnected?.Invoke();
+            }
         }
 
         private SimilarityElement GetSimilarityElement(SimilarityElement similarityElement, Vector2 pos)
@@ -82,5 +96,14 @@ namespace Similarity_container
             
             return selectedSimilarityElement;
         }
+
+        private IEnumerator ActivateNewLevelCoroutine()
+        {
+            yield return new WaitForSeconds(0.7f);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        private bool CheckWin() => 
+            _leftElements.All(x => x.IsConnect) || _rightElements.All(x => x.IsConnect);
     }
 }

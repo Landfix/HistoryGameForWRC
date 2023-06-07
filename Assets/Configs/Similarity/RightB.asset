@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _similarityType: 1
   _sideType: 1
-  _sprite: {fileID: 1606090075, guid: 9317a08db696557488c011b1202b184f, type: 3}
+  _sprite: {fileID: -219146972, guid: 9261e5a064eca6f4ea5f09aa3a54f505, type: 3}

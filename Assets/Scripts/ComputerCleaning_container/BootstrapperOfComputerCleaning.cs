@@ -20,7 +20,6 @@ namespace ComputerCleaning_container
 
         public override void ShowHint()
         {
-            throw new System.NotImplementedException();
         }
     }
 }
