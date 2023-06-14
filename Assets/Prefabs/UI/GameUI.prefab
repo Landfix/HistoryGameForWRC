@@ -223,6 +223,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: IncorrectCurtain
       objectReference: {fileID: 0}
+    - target: {fileID: 6931894933393786526, guid: cb7c54ade6d6f4a45babc2a72f43b923, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931894935053440289, guid: cb7c54ade6d6f4a45babc2a72f43b923, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1427559937, guid: 0c0b779639020524e996d741dd53e66f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb7c54ade6d6f4a45babc2a72f43b923, type: 3}
 --- !u!224 &7046324867240229696 stripped
@@ -248,6 +256,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1514042823386504347}
     m_Modifications:
+    - target: {fileID: 5978176006843896017, guid: f1256adaa14eda34cb082a108b851264, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5978176006843896026, guid: f1256adaa14eda34cb082a108b851264, type: 3}
       propertyPath: m_Name
       value: WinCurtain
@@ -336,6 +348,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5978176008271250286, guid: f1256adaa14eda34cb082a108b851264, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1733346894, guid: 0c0b779639020524e996d741dd53e66f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1256adaa14eda34cb082a108b851264, type: 3}
 --- !u!114 &1514042824812554469 stripped
